@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    .w3-col.m2{width:75%;}
+
+    </style>
+</head>
+
+<body>
+
+<!--header with nav bar and background picture-->
+
+<header class="header-section" style="color: white">
+
+    <!-- Navbar -->
+
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">VALAR</a>
+
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#home" class="w3-bar-item w3-button">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button">ABOUT <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <!--<div class="dropdown-menu">
+                     <a href="#" class="dropdown-item w3-button">Merchandise</a>
+                        <a href="#" class="dropdown-item w3-button">Extras</a>
+                        <a href="#" class="dropdown-item w3-button">Media</a>
+                </div>-->
+                </div>
+
+                <a href="#" class="w3-bar-item w3-button">ADS</a>
+                <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+                <a href="#" class="w3-bar-item w3-button">| &emsp; LOGIN</a>
+                <a href="#" class="w3-bar-item w3-button">REGISTER</a>
+            </div>
+
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">ADS</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">REGISTER</a>
+
+    </nav>
+
+
+    <!--background image-->
+
+    <div class="bgimage ">
+        <div class="bgtext" style="position:center">
+            <h1>Welcome to Valar</h1>
+            <h6>A simple and stylish template.</h6>
+
+            <br>
+            <!--search bar-->
+
+
+
+
+            <div class="w3-col m2">
+
+                <input class="w3-input w3-border" type="number" placeholder="What are you looking for?">
+            </div>
+            <div class="w3-col m3">
+
+                <button class="w3-button w3-block w3-blue">Search</button>
+            </div>
+            <br><br>
+            <p></p>
+
+        </div>
+    </div>
+</header>
+
+<!--featured ads-->
+
+<section class="fads" id="a">
+    <div class="w3-container w3-padding-32 w3-center">
+        <div class=" w3-padding-32" >
+            <div class="w3-quarter">
+                <div class="w3-card">
+                    <img src="img/1.jpg" alt="Car" style="width:100%">
+                    <div class="w3-container">
+                        <p>Card 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-card-4">
+                    <img src="img/2.jpg" alt="Car" style="width:100%">
+                    <div class="w3-container">
+                        <p>Card 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-card-4">
+                    <img src="img/3.jpg" alt="Car" style="width:100%">
+                    <div class="w3-container">
+                        <p>Card 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-card-4">
+                    <img src="img/4.jpg" alt="Car" style="width:100%">
+                    <div class="w3-container">
+                        <p>Card 4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-16" style="color=black">
+                <div class="w3-bar">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black"><</a>
+                    <a href="#" class="w3-bar-item"></a>
+
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Popular category-->
+<section class="testimonial" style="color:black">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" >
+        <h2 class="w3-wide" style="color:#2196F3" >Popular Categories</h2>
+        <p class="w3-opacity" style="color:black">See Our Daily News and Updates</p>
+        <br>
+        <hr>
+
+        <div class="w3-padding-32">
+            <div class="w3-six">
+                <div class="pic" >
+                    <img src="img/cars.png" class="pic" alt="Name" style="position:center">
+                </div>
+
+                <p class="w3-opacity" style="color:black">Cars & Vehicles</p>
+                <p><br></p>
+            </div>
+            <div class="w3-six">
+                <div class="pic" >
+                    <img src="img/furniture.png" class="pic" alt="Name" style="position:center">
+                </div>
+
+                <p class="w3-opacity" style="color:black">Furniture</p>
+                <p><br></p>
+            </div>
+            <div class="w3-six">
+                <div class="pic" >
+                    <img src="img/real.png" class="pic" alt="Name" style="position:center">
+                </div>
+
+                <p class="w3-opacity" style="color:black">Real Estate</p>
+                <p><br></p>
+            </div>
+            <div class="w3-six">
+                <div class="pic" >
+                    <img src="img/books.png" class="pic" alt="Name" style="position:center">
+                </div>
+
+                <p class="w3-opacity" style="color:black">Books & Magazines</p>
+                <p><br></p>
+            </div>
+            <div class="w3-six">
+                <div class="pic" >
+                    <img src="img/electronics.png" class="pic" alt="Name" style="position:center">
+                </div>
+
+                <p class="w3-opacity" style="color:black">Electronics</p>
+                <p><br></p>
+            </div>
+            <div class="w3-six">
+                <div class="pic" >
+                    <img src="img/clothes.png" class="pic" alt="Name" style="position:center">
+                </div>
+
+                <p class="w3-opacity" style="color:black">Clothes</p>
+                <p><br></p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--trending today-->
+
+<section class="blog-section spad">
+    <div class="w3-container w3-content w3-padding-64">
+        <div class="row">
+            <div class="col-lg-7">
+                <h4 class="w3-wide " style="color:#2196F3">Trending Today</h4>
+                <hr>
+
+                <div class="w3-half">
+                    <div class="blog-item">
+                        <div class="bi-thumb">
+                            <img alt="" src="img/2.jpg">
+                        </div>
+                        <div class="bi-content">
+                            <h5>10 tips to dress like a queen</h5>
+                            <div class="bi-meta">July 02, 2018   |   By maria deloreen</div>
+
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="bi-thumb">
+                            <img alt="" src="img/3.jpg">
+                        </div>
+                        <div class="bi-content">
+                            <h5>Fashion Outlet products</h5>
+                            <div class="bi-meta">July 02, 2018   |   By Jessica Smith</div>
+
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="bi-thumb">
+                            <img alt="" src="img/4.jpg">
+                        </div>
+                        <div class="bi-content">
+                            <h5>pants in style</h5>
+                            <div class="bi-meta">July 02, 2018   |   By maria deloreen</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="blog-item">
+                        <div class="bi-thumb">
+                            <img alt="" src="img/1.jpg">
+                        </div>
+                        <div class="bi-content">
+                            <h5>10 tips to dress like a queen</h5>
+                            <div class="bi-meta">July 02, 2018   |   By maria deloreen</div>
+
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="bi-thumb">
+                            <img alt="" src="img/2.jpg">
+                        </div>
+                        <div class="bi-content">
+                            <h5>Fashion Outlet products</h5>
+                            <div class="bi-meta">July 02, 2018   |   By Jessica Smith</div>
+
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="bi-thumb">
+                            <img alt="" src="img/3.jpg">
+                        </div>
+                        <div class="bi-content">
+                            <h5>dresses for you</h5>
+                            <div class="bi-meta">July 02, 2018   |   By maria deloreen</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--testimonial-->
+<section class="testimonial" id="test" style="color:black">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testimonial">
+        <h2 class="w3-wide" style="color:#2196F3" >Testimonials </h2>
+        <hr>
+        <div class="w3-row w3-padding-32">
+            <div class="pic" >
+                <img src="img/8.jpg" class="prof-pic" alt="Name" style="position:center; height: 150px;
+  width: 150px;">
+            </div>
+        </div>
+        <p class="w3-opacity" style="color:black">Jane Austen</p>
+        <p><br></p>
+        <p class=" w3-opacity font-inc" style="position:center;color:black"><i>"There are few people whom I really love, and still fewer of whom I think well. The more I see of the world, the more am I dissatisfied with it; and every day confirms my belief of the inconsistency of all human characters, and of the little dependence that can be placed on the appearance of merit or sense."</i></p>
+    </div>
+</section>
+
+<!--Blog section-->
+
+<section class="ourblog-section" id="blog">
+    <div class="w3-container w3-center">
+        <div class=" w3-padding-32" >
+            <h2 class="w3-wide" style="color:#2196F3" >Our Blogs </h2>
+            <p class="w3-opacity" style="color:black">See Our Daily News and Updates</p>
+            <br>
+            <hr>
+            <div class="w3-third w3-margin-bottom">
+                <img src="img/1.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Many People Selling Online</b><br></p>
+                    <p class="w3-opacity"><br>by Mark Spiker  - Jan 18, 2019 - News<br></p>
+                    <p><br>We must develop and maintain the capacity to forgive. He who is devoid of the power to forgive is devoid of the power to love. There is some good in the worst of us and some evil in the best of us. When we discover this, we are less prone to hate our enemies.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="img/2.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Many People Selling Online</b><br></p>
+                    <p class="w3-opacity"><br>by Mark Spiker  - Jan 18, 2019 - News<br></p>
+                    <p><br>We must develop and maintain the capacity to forgive. He who is devoid of the power to forgive is devoid of the power to love. There is some good in the worst of us and some evil in the best of us. When we discover this, we are less prone to hate our enemies.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="img/3.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Many People Selling Online</b><br></p>
+                    <p class="w3-opacity"><br>by Mark Spiker  - Jan 18, 2019 - News<br></p>
+                    <p><br>We must develop and maintain the capacity to forgive. He who is devoid of the power to forgive is devoid of the power to love. There is some good in the worst of us and some evil in the best of us. When we discover this, we are less prone to hate our enemies.</p>
+                    <br>
+                </div>
+            </div>
+            <button type="button" class="w3-button w3-blue w3-margin-bottom">View All Posts</button>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter section-->
+
+<section class="subs" id="b">
+    <div class="w3-container w3-blue w3-padding-32 ">
+        <div class="w3-half w3-opacity">
+            <h4>Newsletter</h4>
+            <p>Please subscribe to our Newsletter, we provide useful feed.</p>
+        </div>
+        <div class="w3-half">
+            <p><i><input class="w3-input w3-border " type="text" placeholder="Email" style="width:60%"></i>
+                <br>
+                <button type="button" class="w3-button w3-light-grey w3-margin-bottom " >Subscribe</button></p>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="w3-padding-64 w3-black w3-small " id="footer">
+    <div class="w3-padding-32 w3-center" style="padding-left:300px">
+
+        <div class="w3-col s3 ">
+            <h4>About</h4>
+            <div class="w3-opacity">
+                <h6>This is a demo dummy website made by Abha Abhay Wadjikar which could be used an an e-commerce website. </h6>
+            </div>
+        </div>
+
+        <div class="w3-col s3">
+            <h4>Navigations</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Services</a></p>
+            <p><a href="#">Testimonial</a></p>
+            <p><a href="#">Contact Us</a></p>
+
+        </div>
+
+        <div class="w3-col s3 w3-justify">
+            <h4>Store</h4>
+            <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+            <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+            <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+            <br>
+            <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+            <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+            <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+            <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+            <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+
+        <br><br>
+    </div>
+
+
+    <div class="w3-black w3-center w3-padding-24"><br><br>Copyrights @ <a href="#" title="ABHA" target="_blank" class="w3-hover-opacity">Abha</a></div>
+
+</footer>
+
+<!-- End page content -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
